@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nie udało się wysłać zapytania</title>
+    <link rel="stylesheet" href="../static/style.css" th:href="@{style.css}">
+</head>
+<body>
+<header th:replace="~{fragments :: my-header}">
+    Nagłówek strony
+</header>
+<main>
+    <h1>Nie udało się wysłać zapytania, spróbuj ponownie!!!</h1>
+    <a href="/form">Formularz kontaktowy</a>
+    <br>
+    <a href="/">Strona główna</a>
+</main>
+
+<footer th:replace="~{fragments :: my-footer}">
+    Stopka strony
+</footer>
+</body>
+</html>

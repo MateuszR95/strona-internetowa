@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pl" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Strona główna</title>
+    <link rel="stylesheet" href="../static/style.css" th:href="@{style.css}">
+</head>
+<body>
+<header th:replace="~{fragments :: my-header}">
+    Nagłówek strony
+</header>
+
+<main>
+    <br>
+    <a href="/form">Formularz kontaktowy</a>
+
+    <h1>O nas</h1>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed elit eu nisl viverra volutpat sit amet vitae
+        ipsum. Suspendisse tempor, ipsum a sagittis luctus, leo sem luctus magna, nec viverra turpis erat ut urna.
+        Maecenas euismod, velit ut euismod vehicula, leo ex ullamcorper ligula, id tempus mi elit eu urna. Nulla posuere
+        ligula vel magna dictum, vitae efficitur sem cursus. Sed congue neque ut risus rutrum lacinia. Suspendisse maximus
+        velit sollicitudin venenatis faucibus. Etiam vel mauris cursus justo pharetra vulputate. Mauris eu mollis mauris,
+        hendrerit varius ipsum. Aliquam convallis purus nisi, id maximus mauris ullamcorper quis. Etiam diam risus,
+        consequat mattis nibh vulputate, ornare sagittis ex. Aliquam blandit convallis dignissim. Sed id turpis lobortis
+        lorem placerat congue elementum non erat. Vivamus vitae orci eu leo convallis sollicitudin.
+    </p>
+</main>
+
+<footer th:replace="~{fragments :: my-footer}">
+    Stopka strony
+</footer>
+</body>
+</html>

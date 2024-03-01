@@ -1,0 +1,10 @@
+spring:
+  mail:
+    host: smtp.wp.pl
+    username: email-testowy2@wp.pl
+    password: Haslo12345
+    port: 465
+    properties:
+      mail.smtp.ssl.enable: true
+      smtp.auth=true:
+
