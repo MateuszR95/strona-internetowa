@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pl" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Fragmenty</title>
+</head>
+<body>
+
+<header th:fragment="my-header">
+    <h1 style="font-size: xx-large">OPONEX</h1>
+    <img src="../static/logo.png" alt="Logo" th:src="@{/logo.png}">
+</header>
+<footer th:fragment="my-footer">
+   Oponex-Wszelkie prawa zastrzeżone &#169; 2024
+</footer>
+</body>
+</html>

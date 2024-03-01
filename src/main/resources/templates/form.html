@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pl" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Formularz</title>
+    <link rel="stylesheet" href="../static/style.css" th:href="@{style.css}">
+</head>
+<body>
+<header th:replace="~{fragments :: my-header}">
+    Nagłówek strony
+</header>
+
+<main>
+<form action="/contact" method="post">
+    <a href="/">Wróć do strony głównej</a>
+    <br>
+    <h1> Formularz kontaktowy</h1>
+    <input type="text" name="senderName" placeholder="Podaj imię i nazwisko">
+    <br>
+    <input type="email" name="senderEmail" placeholder="Podaj adres email">
+    <br>
+    <textarea name="content" placeholder="Podaj treść wiadomości" rows="5"></textarea>
+    <br>
+    <button type="submit">Wyślij</button>
+</form>
+</main>
+
+<footer th:replace="~{fragments :: my-footer}">
+    Stopka strony
+</footer>
+</body>
+</html>
